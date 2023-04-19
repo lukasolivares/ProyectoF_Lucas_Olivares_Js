@@ -2,7 +2,7 @@
 let productos = [
     {
         id:01,
-        nombre: "remera",
+        nombre: "Remera",
         categoria: "remera",
         precio: 5300,
         stock: 3,
@@ -73,7 +73,7 @@ function flitrarPorCategoria(e) {
 
 function filtrarPorNombre(e) {
     console.log(e.target.id)
-    let arrayFiltrado = productos.filter(productos => productos.nombre.includes(buscador.value))
+    let arrayFiltrado = productos.filter(producto => producto.nombre.toLowerCase().includes(buscador.value.toLowerCase()))
     renderizarShop(arrayFiltrado)
 }
 
