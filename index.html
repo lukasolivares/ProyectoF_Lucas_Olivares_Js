@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Lucas</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <header>
+            <nav class="menu">
+                <h1 class="logo">Lucas Store</h1>
+                <ul>
+                    <li><button class="button_menu"></button>Inicio</li>
+                    <li><button class="button_menu"></button>Tienda</li>
+                    <li><button class="button_menu"></button>Quienes Somos</li>
+                    <li><a href="./js/carrito.js">Carrito</a><span class="numerito">0</span></li>
+                </ul>
+                <input id="usuario" placeholder="Usuario">
+                <input id="contrasenia" placeholder="Contrasenia">
+                <button id="iniciar">Iniciar Secion</button>
+            </nav>
+    </header>
+
+    <section id="productos_tienda">
+        <div class="filtro_shop">
+            <input type="text" id="buscador" placeholder="Buscar por Nombre">
+            <label><input class="input" type="checkbox" id="remeras">Remeras</label>
+            <label><input class="input" type="checkbox" id="pantalon">pantalones</label>
+            <label><input class="input" type="checkbox" id="zapatillas">zapatillas</label>
+
+        </div>
+        
+        <div id="contenedorProductos">
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <script src="/main.js"></script>
+</body>
+</html>
